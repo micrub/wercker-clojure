@@ -1,0 +1,10 @@
+box: clojure
+dev:
+  steps:
+    - script:
+      name: run tests
+      code: |
+        lein test
+    - internal/watch:
+        code: lein run
+        reload: true
