@@ -11,4 +11,12 @@
               :sanitized (name-to-path name)}]
     (main/info "Generating fresh 'lein new' wercker-clojure project.")
     (->files data
-             ["src/{{sanitized}}/foo.clj" (render "foo.clj" data)])))
+             ["intro.md" (render "intro.md" data)]
+             ["CHANGELOG.md" (render "CHANGELOG.md" data)]
+             ["README.md" (render "README.md" data)]
+             ["LICENSE" (render "LICENSE" data)]
+             ["gitignore" (render ".gitignore" data)]
+             ["hgignore" (render ".hgignore" data)]
+             ["project.clj" (render "project.clj" data)]
+             ["src/{{sanitized}}/test.clj" (render "test.clj" data)]
+             ["test/{{sanitized}}/core.clj" (render "clojure.clj" data)])))
