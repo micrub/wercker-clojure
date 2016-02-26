@@ -1,4 +1,4 @@
-(defproject wercker-clojure/lein-template "0.1.0"
+(defproject wercker-clojure/lein-template "0.1.1"
   :description "Lein template for clojure projects development using Wercker"
   :url "https://github.com/micrub/wercker-clojure"
   :license {:name "Eclipse Public License"
