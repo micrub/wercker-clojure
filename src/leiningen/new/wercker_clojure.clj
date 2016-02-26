@@ -18,6 +18,7 @@
                             :date (date)}]
     (main/info "Generating fresh 'lein new' wercker-clojure project.")
     (->files data
+             ["wercker.yml" (render "wercker.yml" data)]
              ["intro.md" (render "intro.md" data)]
              ["CHANGELOG.md" (render "CHANGELOG.md" data)]
              ["README.md" (render "README.md" data)]
@@ -25,5 +26,5 @@
              [".gitignore" (render "gitignore" data)]
              [".hgignore" (render "hgignore" data)]
              ["project.clj" (render "project.clj" data)]
-             ["src/{{sanitized}}/core.clj" (render "core.clj" data)]
-             ["test/{{sanitized}}/core_test.clj" (render "core_test.clj" data)])))
+             ["src/{{nested-dirs}}.clj" (render "core.clj" data)]
+             ["test/{{nested-dirs}}_test.clj" (render "core_test.clj" data)])))
