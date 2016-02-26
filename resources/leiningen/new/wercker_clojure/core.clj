@@ -9,6 +9,8 @@
 
 (defn -main
   [& args]
-  (run-server app {:port 8080
-                   :ip "0.0.0.0"
-                   :worker-name-prefix "{{namespace}}"}))
+  (let [port 8080]
+    (println "Listening on port: " port)
+    (run-server app {:port port
+                     :ip "0.0.0.0"
+                     :worker-name-prefix "{{namespace}}"})))

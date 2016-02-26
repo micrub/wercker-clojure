@@ -10,10 +10,10 @@ A Leiningen template for clojure projects development using Wercker.
 
 ### Development stage
 
-In order to run tests in container, execute:
+In order to run tests in container, and run development server on port 8080 execute:
 
 ````
-wercker dev
+wercker dev --publish 8080
 ```
 
 ## License
