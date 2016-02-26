@@ -18,5 +18,5 @@
              [".gitignore" (render "gitignore" data)]
              [".hgignore" (render "hgignore" data)]
              ["project.clj" (render "project.clj" data)]
-             ["src/{{sanitized}}/test.clj" (render "test.clj" data)]
-             ["test/{{sanitized}}/core.clj" (render "clojure.clj" data)])))
+             ["src/{{sanitized}}/core.clj" (render "core.clj" data)]
+             ["test/{{sanitized}}/test.clj" (render "test.clj" data)])))
