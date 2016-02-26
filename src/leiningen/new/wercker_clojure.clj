@@ -15,8 +15,8 @@
              ["CHANGELOG.md" (render "CHANGELOG.md" data)]
              ["README.md" (render "README.md" data)]
              ["LICENSE" (render "LICENSE" data)]
-             ["gitignore" (render ".gitignore" data)]
-             ["hgignore" (render ".hgignore" data)]
+             [".gitignore" (render "gitignore" data)]
+             [".hgignore" (render "hgignore" data)]
              ["project.clj" (render "project.clj" data)]
              ["src/{{sanitized}}/test.clj" (render "test.clj" data)]
              ["test/{{sanitized}}/core.clj" (render "clojure.clj" data)])))
