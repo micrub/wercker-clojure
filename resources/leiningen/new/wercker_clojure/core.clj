@@ -3,6 +3,8 @@
   (:require [ring.middleware.reload :as reload])
   (:gen-class))
 
+(def server (atom nil))
+
 (defn app [req]
   {:status  200
    :headers {"Content-Type" "text/html"}
