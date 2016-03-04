@@ -1,10 +1,20 @@
 box: clojure
+services:
+  - redis
+  - mongo
+build:
+  steps:
+    - script:
+        code: lein test
 dev:
   steps:
+    - script:
+      name: show env varibles
+      code: env
     - script:
       name: run tests
       code: |
         lein test
     - internal/watch:
         code: lein run
-        reload: true
+        reload: false

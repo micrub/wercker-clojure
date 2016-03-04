@@ -21,6 +21,7 @@
              ["wercker.yml" (render "wercker.yml" data)]
              ["intro.md" (render "intro.md" data)]
              ["CHANGELOG.md" (render "CHANGELOG.md" data)]
+             ["Dockerfile" (render "Dockerfile" data)]
              ["README.md" (render "README.md" data)]
              ["LICENSE" (render "LICENSE" data)]
              [".gitignore" (render "gitignore" data)]
